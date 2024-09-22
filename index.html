@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Indian Tax Calculator</h1>
+
+        <div id="income-input">
+            <h2>Income Input</h2>
+            <label for="salary">Annual Salary:</label>
+            <input type="number" id="salary" placeholder="Enter your salary">
+
+            <label for="other-income">Other Income:</label>
+            <input type="number" id="other-income" placeholder="Enter other income">
+
+            <h3>Total Income: <span id="total-income">₹0</span></h3>
+        </div>
+
+        <div id="deductions">
+            <h2>Deductions</h2>
+            <label for="section80c">Investments under Section 80C:</label>
+            <input type="number" id="section80c" placeholder="Enter amount">
+
+            <label for="section80d">Health Insurance Premium (80D):</label>
+            <input type="number" id="section80d" placeholder="Enter amount">
+
+            <h3>Total Deductions: <span id="total-deductions">₹0</span></h3>
+        </div>
+
+        <button id="calculate-button">Calculate Tax</button>
+        <button id="reset-button">Reset</button>
+
+        <div id="results" class="hidden">
+            <h2>Tax Calculation Results</h2>
+            <p>Total Income: <span id="result-income"></span></p>
+            <p>Total Deductions: <span id="result-deductions"></span></p>
+            <p>Taxable Income: <span id="result-taxable-income"></span></p>
+            <p>Estimated Tax Liability: <span id="result-tax-liability"></span></p>
+            <p id="breakdown"></p>
+            <div id="educational-insights"></div>
+            <div id="savings-suggestions"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
